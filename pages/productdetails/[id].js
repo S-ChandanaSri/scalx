@@ -1,4 +1,4 @@
-import React from 'react';
+import { useRouter } from 'next/router';
 import styles from '../../styles/Home.module.css';
 import Image from 'next/image';
 import myImage from '../../public/images/pathh.jpg';
@@ -7,10 +7,17 @@ import notifi from '../../public/images/notf.jpg';
 import shoppi from '../../public/images/shoppi.jpg';
 import man from '../../public/images/coverimg.png'
 
-const Navbar=()=>{
-  return (
-    
-    <div className={styles.navbar}>
+
+function ProductDetails() {
+    const router = useRouter();
+    const { id } = router.query;
+
+    // Use the `id` parameter as needed
+    console.log('Product ID:', id);
+
+    return (
+        <div>
+        <div className={styles.navbar}>
     {/* First Row */}
     <div className={styles.promotionsnap} >
     <p className={styles.return} style={{ gridColumn: '13 / 14' }}>Return</p>
@@ -49,13 +56,14 @@ const Navbar=()=>{
         <div className={styles.shoppi}><Image src={shoppi} /></div>
     </div>
 </div>
-
-        
-        
-      
-     
-
-  )
+        <div >
+            <h1>Product Details Page</h1>
+            <p>Product ID: {id}</p>
+            {/* Other product details */}
+        </div>
+        </div>
+    );
 }
 
-export default Navbar
+export default ProductDetails;
+
