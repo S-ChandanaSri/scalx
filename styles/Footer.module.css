@@ -43,8 +43,8 @@
     position: absolute;
     top: 3486.9px;
     left: 404px;
-    padding-left: 4rem; /* Equivalent to pl-40 in Tailwind */
-    padding-bottom: 1rem; /* Equivalent to pb-10 in Tailwind */
+    padding-left: 4rem; 
+    padding-bottom: 1rem; 
 }
 
-/* Add more styles as needed */
+

@@ -22,19 +22,18 @@ function ProductDetails() {
         const options = {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '6b657d12c2mshe15590b5318b569p15c9dcjsn8ecb9ff1890b', // Replace with your actual RapidAPI key
+                'X-RapidAPI-Key': '6b657d12c2mshe15590b5318b569p15c9dcjsn8ecb9ff1890b', 
                 'X-RapidAPI-Host': 'real-time-amazon-data.p.rapidapi.com'
             }
         };
 
         axios.request(url, options)
             .then(response => {
-                console.log('API Response:', response.data); // Log the entire response data to see its structure
+                console.log('API Response:', response.data); 
 
-                // Assuming the products are in response.data.data.products based on the response data structure
                 if (response.data && response.data.data && response.data.data.products) {
                     const products = response.data.data.products;
-                    const foundProduct = products.find(product => product.asin === id); // Assuming `id` is the correct field
+                    const foundProduct = products.find(product => product.asin === id); 
                     if (foundProduct) {
                         setProduct(foundProduct);
                     } else {
@@ -105,7 +104,7 @@ function ProductDetails() {
                 
             <div className='w-[214px]'>
                     <img
-                        src={product.product_photo} // Replace with your actual image URL
+                        src={product.product_photo} 
                         alt="Product Photo"
                         className={`${styles.productImage}`}
                         />

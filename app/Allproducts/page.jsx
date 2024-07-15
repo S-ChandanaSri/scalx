@@ -1,4 +1,4 @@
-// use client
+
 "use client";
 
 
@@ -8,9 +8,9 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 import Link from 'next/link';
 
 function Home() {
-  const [data, setData] = useState([]);  // Initialize data as an empty array
-  const [page, setPage] = useState(1);   // Initialize page state
-  const [loading, setLoading] = useState(false);  // Loading state
+  const [data, setData] = useState([]);  
+  const [page, setPage] = useState(1);   
+  const [loading, setLoading] = useState(false);  
 
   const fetchData = async () => {
     const url = `https://real-time-amazon-data.p.rapidapi.com/products-by-category?category_id=2478868012&page=${page}&country=US&sort_by=RELEVANCE&product_condition=ALL`;
@@ -24,29 +24,28 @@ function Home() {
   
     try {
       const response = await axios.get(url, options);
-      console.log('Response:', response); // Log entire response for detailed inspection
+      console.log('Response:', response);
       
-      // Adjust data access based on nested structure
-      const newData = response.data.data.products || []; // Ensure correct access to products array
+   
+      const newData = response.data.data.products || []; 
   
-      console.log('Fetched data:', newData); // Log fetched data
-      setData(prevData => [...prevData, ...newData]);  // Append new data to existing data
+      console.log('Fetched data:', newData); 
+      setData(prevData => [...prevData, ...newData]); 
     } catch (error) {
-      console.error('Error fetching data:', error); // Log any errors that occur
+      console.error('Error fetching data:', error); 
     }
   };
 
-  // Function to fetch more data when scrolling reaches the bottom
   const fetchMoreData = () => {
-    setLoading(true);  // Set loading to true before fetching data
-    setPage(prevPage => prevPage + 1);  // Increment page number
-    fetchData();  // Fetch more data
-    setLoading(false);  // Set loading to false after fetching data
+    setLoading(true);  
+    setPage(prevPage => prevPage + 1);  
+    fetchData();  
+    setLoading(false); 
   };
 
   useEffect(() => {
-    fetchData();  // Fetch initial data on component mount
-  }, []);  // Empty dependency array ensures it runs only once
+    fetchData();  
+  }, []);  
 
 
   
@@ -81,7 +80,7 @@ function Home() {
 
           <div className="flex-1 ml-8" style={{ width: '1100px', height: '1501px' }}>
             <InfiniteScroll
-              dataLength={data.length}  // This is important field to render the next data
+              dataLength={data.length}  
               next={fetchMoreData}
               hasMore={true}
               loader={<p className="text-center my-4">Loading...</p>}
