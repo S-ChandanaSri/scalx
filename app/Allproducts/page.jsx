@@ -17,7 +17,7 @@ function Home() {
     const options = {
       method: 'GET',
       headers: {
-        'x-rapidapi-key': '55e9362a69msh3f7846170d461b8p12112fjsn83c836a6111b',
+        'x-rapidapi-key': '6b657d12c2mshe15590b5318b569p15c9dcjsn8ecb9ff1890b',
         'x-rapidapi-host': 'real-time-amazon-data.p.rapidapi.com'
       }
     };
@@ -63,8 +63,19 @@ function Home() {
       <main style={{display:"flex",paddingTop:"540px"}}>
         <div style={{width:"300px",height:"1501px"}}>
           <div className="w-1269px h-1501px border-[1px] border-[0px] border-[0px] border-[0px] border-[1px] border-[solid] border-[#231F201A] ml-[20px]">
-lllll          
-</div>
+            <div className='w-[250px] h-[177px] top-[880px] left-[49px] gap-0 border-[1px] border-[0px] border-[0px] border-[0px] border-[1px] border-[solid] border-[#231F201A]'>
+              <div className='w-[250px] h-[43px] top-[880px] left-[49px] gap-0 border-[1px] border-[0px] border-[0px] border-[0px] border-[1px] border-[solid] border-[#231F201A]'>
+                <p className='w-[86px] h-[15px] top-[880px] left-[49px] font-[Gotham] text-[16px] font-normal leading-[15.31px] text-left pl-20 pt-2.5'>COMPANY</p>
+               
+              </div>
+              <div className='w-[250px] h-[43px] top-[947px] left-[49px] gap-0 border-[1px] border-[0px] border-[0px] border-[0px] border-[1px] border-[solid] border-[#231F201A]'>
+                <p className='w-[86px] h-[15px] top-[880px] left-[49px] font-[Gotham] text-[16px] font-normal leading-[15.31px] text-left  pl-20 pt-2.5'>PRICE</p>
+              </div>
+              <div className='w-[250px] h-[43px] top-[1014px] left-[49px] gap-0 border-[1px] border-[0px] border-[0px] border-[0px] border-[1px] border-[solid] border-[#231F201A]'>
+                <p className='w-[86px] h-[15px] top-[880px] left-[49px] font-[Gotham] text-[16px] font-normal leading-[15.31px] text-left  pl-20 pt-2.5'>CATEGORIES</p>
+              </div>
+            </div>       
+          </div>
         </div>
 
 

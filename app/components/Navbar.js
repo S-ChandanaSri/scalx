@@ -20,7 +20,7 @@ const Navbar=()=>{
 
     {/* Second Row */}
     <p className={styles.macc} >
-        Macc <span style={{ alignItems: "center", lineHeight: "44.88px", fontSize: "40px", fontStyle: "italic", fontWeight: "400", fontFamily: "Monotype Corsiva" }}>Essentials</span>
+        Macc <span style={{alignItems: "center", lineHeight: "44.88px", fontSize: "40px", fontStyle: "italic", fontWeight: "400", fontFamily: "Monotype Corsiva" }}>Essentials</span>
     </p>
 
     {/* Search Box */}

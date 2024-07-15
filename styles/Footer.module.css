@@ -1,0 +1,50 @@
+/* styles/Footer.module.css */
+.footerContainer {
+    display: flex;
+    bottom: 0;
+    padding-left: 1.75rem; /* Equivalent to pl-7 in Tailwind */
+    padding-top: 3rem; /* Equivalent to pt-12 in Tailwind */
+}
+
+.promotionsSnap {
+    display: flex;
+    width: 623.41px;
+    height: 122px;
+    position: absolute;
+    top: 3478.9px;
+    left: 97.58px;
+    gap: 0;
+}
+
+.maccEssentials {
+    width: 195px;
+    height: 122px;
+    position: absolute;
+    top: 3478.9px;
+    left: 97.58px;
+    font-family: Monotype_Corsiva;
+    font-size: 54px;
+    font-style: italic;
+    line-height: 60.59px;
+    text-align: left;
+}
+
+.maccEssentials span:first-child {
+    color: red;
+}
+
+.maccEssentials span:last-child {
+    color: blue;
+}
+
+.productsCollection {
+    width: 91px;
+    height: 108px;
+    position: absolute;
+    top: 3486.9px;
+    left: 404px;
+    padding-left: 4rem; /* Equivalent to pl-40 in Tailwind */
+    padding-bottom: 1rem; /* Equivalent to pb-10 in Tailwind */
+}
+
+/* Add more styles as needed */

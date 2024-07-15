@@ -25,6 +25,7 @@ height: 100%;
     border: 1px;
 }
 .search{
+  padding-left: 2rem;
     width: 22.01px;
     height: 22.01px;
     top: 106px;
@@ -85,6 +86,7 @@ padding-top: 2.5rem;
 
 }
 .engagment{
+  padding-left: 3rem;
     width: 99px;
     height: 20px;
     top: 107px;
@@ -94,6 +96,7 @@ padding-top: 2.5rem;
 
 }
 .engagmentt{
+  padding-left: 6rem;
     width: 118px;
     height: 20px;
     top: 107px;
@@ -103,6 +106,7 @@ padding-top: 2.5rem;
 
 }
 .collection{
+  padding-left: 9rem;
     width: 86px;
     height: 20px;
     top: 107px;
@@ -165,6 +169,7 @@ padding-top: 2.5rem;
   }
 
   .macc{
+    padding-left: 6rem;
     grid-column: 7 / 8;
     padding-top: 1rem;
     width: 86px;
@@ -236,7 +241,7 @@ left: 80px;
 .imh{
   width: 500px;
   height: 500.82px;
-  
+  padding-top: 5rem;
   left: 792px;
 }
 .contentt{
@@ -281,4 +286,9 @@ height: 672.1px;
 margin-top: 10rem;
 left: 45.35px;
 
+
+}
+.product-image {
+  width: 214px;
+  height: 214px;
 }
