@@ -5,7 +5,8 @@ import myImage from '../../public/images/pathh.jpg';
 import profile from '../../public/images/profile.png';
 import notifi from '../../public/images/notf.jpg';
 import shoppi from '../../public/images/shoppi.jpg';
-import man from '../../public/images/coverimg.png'
+import man from '../../public/images/coverimg.png';
+import Link from 'next/link';
 
 const Navbar=()=>{
   return (
@@ -13,6 +14,10 @@ const Navbar=()=>{
     <div className={styles.navbar}>
     {/* First Row */}
     <div className={styles.promotionsnap} >
+        <Link href='/Allproducts'>
+        <p style={{ gridColumn: '13 / 14',border:"2px solid black",paddingLeft:"2.5rem",color:"red",marginTop:"0.5rem" }}>All products</p>
+
+        </Link>
     <p className={styles.return} style={{ gridColumn: '13 / 14' }}>Return</p>
         <p className={styles.help} style={{ gridColumn: '14 / 15' }}>Help</p>
         <p className={styles.register} style={{ gridColumn: '15 / 16' }}>Register / Sign In</p>
